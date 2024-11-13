@@ -100,7 +100,7 @@ Run the project
 ```
 
 This project runs on port 8080, so the route is:
-http://localhost:8080.
+http://localhost:8080/api/books.
 
 This project also comes with SwaggerUI built into it, for testing on a browser, please visit: http://localhost:8080/swagger-ui/index.html.
 
