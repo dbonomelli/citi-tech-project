@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "ebc5b998-1593-4568-a28b-d32f30c90379",
+		"name": "BookPostman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29364840"
+	},
+	"item": [
+		{
+			"name": "getAllBooks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBookById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/books/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"books",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveBook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"3\",\n    \"name\": \"To Kill a Mockingbird\",\n    \"author\": \"Harper Lee\",\n    \"year\": \"1960\",\n    \"edition\": \"1st\",\n    \"isbn\": \"9780061120084\",\n    \"genre\": \"Fiction\",\n    \"isLent\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lendBook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"3\",\n    \"name\": \"To Kill a Mockingbird\",\n    \"author\": \"Harper Lee\",\n    \"year\": \"1960\",\n    \"edition\": \"1st\",\n    \"isbn\": \"9780061120084\",\n    \"genre\": \"Fiction\",\n    \"isLent\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateBook",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"2\",\n    \"name\": \"To Kill a Mockingbird 2\",\n    \"author\": \"Harper Lee\",\n    \"year\": \"1960\",\n    \"edition\": \"1st\",\n    \"isbn\": \"9780061120084\",\n    \"genre\": \"Fiction\",\n    \"isLent\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteBook",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"3\",\n    \"name\": \"To Kill a Mockingbird\",\n    \"author\": \"Harper Lee\",\n    \"year\": \"1960\",\n    \"edition\": \"1st\",\n    \"isbn\": \"9780061120084\",\n    \"genre\": \"Fiction\",\n    \"isLent\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/books/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"books",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
